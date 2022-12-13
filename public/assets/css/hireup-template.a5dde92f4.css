@@ -352,10 +352,10 @@ html[data-w-dynpage] [data-w-cloak] {
   bottom: auto;
   z-index: auto;
   display: block;
-  visibility: visible;
-  overflow: visible;
-  overflow-x: visible;
-  overflow-y: visible;
+  visibility: none;
+  overflow: none;
+  overflow-x: none;
+  overflow-y: none;
   box-sizing: border-box;
   width: auto;
   height: auto;
@@ -379,7 +379,7 @@ html[data-w-dynpage] [data-w-cloak] {
   background-attachment: scroll;
   background-color: transparent;
   box-shadow: none;
-  opacity: 1;
+  opacity: 0;
   transform: none;
   transition: none;
   direction: ltr;

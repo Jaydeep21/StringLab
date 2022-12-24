@@ -1,0 +1,91 @@
+<!DOCTYPE html><!-- Last Published: Tue Nov 08 2022 00:13:53 GMT+0000 (Coordinated Universal Time) -->
+<html>
+    <head>
+<style >
+    [data-am-modal] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 999;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:target {
+        width: auto;
+        height: auto;
+        opacity: 1;
+        transition: opacity 400ms ease;
+        .modal-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: default;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+        }
+    }
+    
+    .modal-dialog {
+        position: relative;
+        width: calc(100% - 30px);
+        max-width: 600px;
+        margin: 15px auto;
+        z-index: 2;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 30px;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    }
+
+    /* Base Styling */
+
+    body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+    .link {
+    display: inline-block;
+    padding: 15px;
+    background-color: #1e91c7;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+</style>
+    </head>
+    <body>
+        <a href="#modal-1" class="link">Open Modal</a>
+
+        <div data-am-modal id="modal-1">
+          <a href="#!" class="modal-overlay"></a>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <a href="#!" class="modal-close">Close</a>
+              <h1>CSS Modal</h1>
+              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p> <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p> <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+          </div>
+        </div>
+    </body>
+
+</html>

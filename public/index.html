@@ -20,57 +20,15 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        #video-wrapper {
-        position: fixed;
-        top: 0; 
-        right: 0; 
-        bottom: 0; 
-        left: 0;
-        overflow: hidden;
-        }
-
-        #video-wrapper >  #video-file {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        cursor:pointer;
-        }
-
-        /* object-fit not supported */
-        @media (min-aspect-ratio: 16/9) {
-        #video-wrapper >  #video-file { 
-            height: 300%; 
-            top: -100%; 
-        }
-        }
-
-        @media (max-aspect-ratio: 16/9) {
-        #video-wrapper > #video-file { 
-            width: 300%; 
-            left: -100%; 
-        }
-        }
-
-        /* object-fit is supported overriding
-        @supports (object-fit: cover) {
-        #video-wrapper > #video-file {
-            width: 100%; 
-            height: 100%;
-            top: 0; 
-            left: 0;
-            bottom: 0;
-            right:0;
-            object-fit: cover;
-        }
-        } */
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navbar w-nav">
+        role="banner" class="navbar w-nav" style="margin-bottom: 0px;">
         <div class="container-navigation">
             <div class="navigation-left"><a href="/" class="brand w-nav-brand"><img 
             src="assets/images/logo-removebg-preview.png" loading="lazy" alt="" class="logo" style="
@@ -78,13 +36,13 @@
             "></a></div>
             <div class="navigation-middle">
                 <nav role="navigation" class="nav-menu w-nav-menu">
-                    <a href="#" class="nav-link w-nav-link">Home</a>
-                    <a href="#program" class="nav-link w-nav-link">Program</a>
-                    <a href="#about" class="nav-link w-nav-link">About</a>
-                    <a href="#team" class="nav-link w-nav-link">Team</a>
-                    <a href="#research" class="nav-link w-nav-link">Research</a>
-                    <a href="#gallery" class="nav-link w-nav-link">Gallery</a>
-                    <a href="#contact" class="nav-link w-nav-link">Contact</a>
+                    <a href="#" class="nav-link w-nav-link" style="text-decoration: none;">Home</a>
+                    <a href="#program" class="nav-link w-nav-link" style="text-decoration: none;">Program</a>
+                    <a href="#about" class="nav-link w-nav-link" style="text-decoration: none;">About</a>
+                    <a href="#team" class="nav-link w-nav-link" style="text-decoration: none;">Team</a>
+                    <a href="#research" class="nav-link w-nav-link" style="text-decoration: none;">Research</a>
+                    <a href="#gallery" class="nav-link w-nav-link" style="text-decoration: none;">Gallery</a>
+                    <a href="#contact" class="nav-link w-nav-link" style="text-decoration: none;">Contact</a>
                 </nav>
             </div>
         </div>
@@ -105,17 +63,6 @@
                         <source src="assets/videos/IMG_4812.mp4" type="video/mp4">
                         
                       </video>
-                    <!-- <img
-                        src=""
-                        loading="lazy"
-                        srcset="assets/images/violin.png 500w,
-                        assets/images/violin.png 800w, 
-                        assets/images/violin.png 1080w,
-                        assets/images/violin.png 1600w, 
-                        assets/images/violin.png 2000w, 
-                        assets/images/violin.png 2600w, 
-                        assets/images/violin.png 3200w"
-                        sizes="(max-width: 479px) 100vw, 90vw" alt="" class="image-cover" /></div> -->
             </div>
             <div data-w-id="203817cb-2b16-f821-b8ac-04ca069f4c2e"
                 style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
@@ -152,17 +99,37 @@
                     <div class="margin-bottom-40">
                         <p class="paragraph-regular">The University of Windsor Lab School: Strings offers music instruction for students ages 4 to 17 who wish to study the violin, viola, or cello through a curriculum that includes group class instruction, theory and master classes, chamber music, and performance opportunities at the University of Windsor’s School of Creative Arts. Instruction is based on the pedagogical philosophies of Mimi Zweig, Dr. Shinichi Suzuki, Paul Rolland, and Ivan Galamian, and will include diverse repertoire and styles. </p>
                     </div>
-                    <!-- <a href="/browse" class="button-primary-right-icon w-inline-block">
-                        <div>View More</div>
-                        <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <path
-                                    d="M15.187 11.2362L11.0895 7.13873L12.1696 6.05859L18.1111 12.0001L12.1696 17.9416L11.0895 16.8615L15.187 12.764H5.88892V11.2362H15.187Z"
-                                    fill="currentColor" />
-                            </svg></div>
-                    </a> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programsModal">
+                        View More
+                      </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="programsModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" > 
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="h3-heading">Our <span class="text-color-primary">Programs</span> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </h3>
+            
+            </div>
+            <div class="modal-body">
+                <p class="paragraph-regular" style="text-align: justify;">
+                    &emsp;&emsp; The University of Windsor Lab School: Strings offers music instruction for students ages 4 to 17 who wish to study the violin, viola, or cello through a curriculum that includes group class instruction, theory and master classes, chamber music, and performance opportunities at the University of Windsor’s School of Creative Arts. Instruction is based on the pedagogical philosophies of Mimi Zweig, Dr. Shinichi Suzuki, Paul Rolland, and Ivan Galamian, and will include diverse repertoire and styles. 
+                    <br><br>
+                    &emsp;&emsp;String students participate in 25 group lessons throughout the year and will engage with leading pedagogues associated with the University of Windsor. The classes are 60 minutes in length and are structured to develop technical/musical skills, ensemble and ear training, concert etiquette, and participation in master class performance experiences, all of which encourage social interactions with their peers. As part of the WSA curriculum, students will have the opportunity to perform in two recitals (December and June) in the University of Windsor School of Creative Arts Recital Hall. 
+
+                In the early stages of music study, students establish the technical/musical foundation on which all future artistry develops. In addition, students become engaged in their learning, set personal goals, acquire an increased sense of self-efficacy, and develop lasting friendships with peers who share similar interests. In essence, a priority of the University of Windsor Lab School: Strings is to nurture the overall well-being of every student. 
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
         </div>
     </div>
     <div class="section-regular">
@@ -182,7 +149,7 @@
                 class="w-dyn-list">
                 <div role="list" class="collection-list-jobs w-dyn-items">
                     <div role="listitem" class="w-dyn-item"><a href="/"
-                            class="job-border w-inline-block">
+                            class="job-border w-inline-block" style="text-decoration: none;">
                             <div class="job-company-wrap">
                                 <div class="icon-wrap-regular"><img
                                         src="assets/images/small-logo.png"
@@ -208,7 +175,7 @@
                             </div>
                         </a></div>
                     <div role="listitem" class="w-dyn-item"><a href="/"
-                            class="job-border w-inline-block">
+                            class="job-border w-inline-block" style="text-decoration: none;">
                             <div class="job-company-wrap">
                                 <div class="icon-wrap-regular"><img
                                         src="assets/images/small-logo.png"
@@ -238,8 +205,54 @@
             </div>
         </div>
     </div>
-    
-    <div class="section-regular neutral-100" id="team">
+    <div class="section-large neutral-100" id="about">
+        <div class="container-small">
+            <div class="w-layout-grid companies-grid">
+                <div id="w-node-_80c74753-c7d6-9908-f823-7e5aecd26239-e5b44236" data-w-id="80c74753-c7d6-9908-f823-7e5aecd26239" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="companies-collection-list-wrapper w-dyn-list">
+                    <img src="assets/images/gallery/IMG_6567.jpg" loading="lazy" srcset="assets/images/gallery/IMG_6567.jpg 500w, assets/images/gallery/IMG_6567.jpg 800w, assets/images/gallery/IMG_6567.jpg 844w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 29vw" alt="" class="image-cover">
+                </div>
+                <div id="w-node-d1272945-c282-7568-e033-3334913f6d8f-e5b44236" data-w-id="d1272945-c282-7568-e033-3334913f6d8f" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="companies-text-wrapper">
+                    <div class="margin-bottom-12">
+                        <div class="detail text-color-primary">About</div>
+                    </div>
+                    <div class="margin-bottom-24">
+                        <h3 class="h3-heading">Teaching <span class="text-color-primary">Philosophy</span></h3>
+                    </div>
+                    <div class="margin-bottom-40">
+                        <p class="paragraph-regular">
+                            As a violin/viola instructor, I have been greatly influenced by my mentors, Mimi Zweig, Dr. Brenda Brenner, and Dr. Metro Kozak. In their teaching practice, they instill the importance of establishing a strong technical/musical foundation with all students within a nonjudgmental teaching environment. Through this perspective, I believe that the quality of instruction from the outset of study affects all future development and potential for musical artistry.
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal">
+                        View More
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" > 
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="h3-heading">Teaching <span class="text-color-primary">Philosophy</span> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </h3>
+            
+            </div>
+            <div class="modal-body">
+                <p class="paragraph-regular" style="text-align: justify;">
+                    &emsp;&emsp; As a violin/viola instructor, I have been greatly influenced by my mentors, Mimi Zweig, Dr. Brenda Brenner, and Dr. Metro Kozak. In their teaching practice, they instill the importance of establishing a strong technical/musical foundation with all students within a nonjudgmental teaching environment. Through this perspective, I believe that the quality of instruction from the outset of study affects all future development and potential for musical artistry. I value and honour this responsibility as an instructor and make every effort to create an atmosphere that fosters personal well-being through learning, experimentation, and creativity in a safe environment. I believe that every student has the ability to learn and cultivate an individualized, well-rounded music education through efficient daily practice, patience, and parental/peer support. Through the teacher-student-parent triangle established in the early stages of study, students are encouraged to develop technical prowess, artistic creativity, aural/reading skills, theory/history as it relates to their level of proficiency, and ease in performance. I consider weekly applied lessons with students as an opportunity to communicate effectively, reward efforts through encouragement, and challenge potential. In addition to private lessons, I believe that group class instruction nurtures social interaction with peers, healthy motivation, ensemble/improvisation skills, concert etiquette, and performance practices. Through weekly private and group lessons, students become a part of a community of musical practice, where they have the opportunity to enjoy music making with peers, nurture a skill that is important in itself as a form of personal activity and development, improve self-esteem and metacognitive awareness, positively affect the social and economic well-being of a community, create social cohesion, and integrate diverse cultures and populations. 
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section-regular" id="team">
         <div class="container-small">
             <div data-w-id="fc77235b-851d-8cb8-7767-8e3c91b7d33a"
                 style="-webkit-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
@@ -247,7 +260,7 @@
                 <div class="margin-bottom-12">
                     <div class="detail text-color-primary">Teachers</div>
                 </div>
-                <h3>Our Team</h3>
+                <h3 class="h3-heading">Our <span class="text-color-primary">Team</span></h3>
             </div>
             <div data-delay="4000" data-animation="cross" class="testimonial-slider w-slider" data-autoplay="false"
                 data-easing="ease"
@@ -320,7 +333,7 @@
             </div>
         </div>
     </div>
-    <div class="section-regular" id="research">
+    <div class="section-regular  neutral-100" id="research">
         <div class="container-regular">
             <div class="feature-grid-large">
                 <div data-w-id="6412834b-d309-44f3-b27f-3221acede79f" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="feature-grid-wrapper">
@@ -331,8 +344,10 @@
                         <div class="margin-bottom-24">
                             <h3>Research</h3>
                         </div>
-                        <p>Sport participation includes experiential aspects related to inclusion and community integration  
-                            including mastery, challenge, autonomy (choice), encouragement, meaning and belongingness.</p>
+                        <p >The University of Windsor Lab School: Strings is a hub for experiential learning: string instruction for young students, pedagogical experiences for SoCA’s undergraduate students through practical, hands-on course work, community investment, opportunities for high school students to gain volunteers hours, and a commitment to graduate student education. It is also a hub for research; supported by SSHRC funding, the work at the lab will exam how students learn and explore the implications of music study on our communities.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#researchModal">
+                                View More
+                              </button>
                     </div>
                 </div>
                 <div data-w-id="72c0720c-c28d-7074-ee72-6afa528287d7" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="feature-image-wrap-large"><img src="assets/images/violin.png" loading="lazy" srcset="assets/images/violin.png 500w, assets/images/violin.png 800w, assets/images/violin.png 844w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, 29vw" alt="" class="image-cover">
@@ -340,6 +355,32 @@
             </div>
         </div>
     </div>
+    <div class="modal fade bd-example-modal-lg" id="researchModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" > 
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="h3-heading">Our <span class="text-color-primary">Research</span> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </h3>
+              
+            </div>
+            <div class="modal-body">
+                <p class="paragraph-regular"  style="text-align: justify;">
+                    &emsp;&emsp; The University of Windsor Lab School: Strings is a hub for experiential learning: string instruction for young students, pedagogical experiences for SoCA’s undergraduate students through practical, hands-on course work, community investment, opportunities for high school students to gain volunteers hours, and a commitment to graduate student education. It is also a hub for research; supported by SSHRC funding, the work at the lab will exam how students learn and explore the implications of music study on our communities. To be specific, the goal of this mixed method study is to examine a small, targeted group of young violin students (ranging in age from 4—17) in Windsor, Ontario, Canada, who engage in a specialized string curriculum to determine cognitive and physiological reactions, and various social and emotional developments within a group context. Our research objectives are to (1) consider and assess how string education may fulfill social benefits, well-being, cultural identification, integration, and belonging. Additionally, the study hopes to (2) establish parameters to determine levels of musical awareness and engagement, introduce innovative pedagogies and skills in string performance, and establish a laboratory and model for continued research and training in the string arts in a Canadian context.  
+
+ 
+                    <br><br>
+                    The Lab School: Strings research team includes Sally Bick PhD, professor, and Jonathan Bayley, PhD, professor emeritus.  
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="blog-section" id="gallery">
         <div class="container-regular">
             <div data-w-id="4c5fd0bb-be77-ca1b-0ecf-d0fd126a155f" class="blog-title-wrap" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
@@ -415,12 +456,112 @@
                                 </div>
                             </div>
                         </div>
-                    </div><div class="blog-slide w-slide" aria-label="5 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_3962.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_3962.jpg 800w, assets/images/gallery/IMG_3962.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="5 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
                         <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
                             <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
                                 <div role="listitem" class="w-dyn-item" aria-hidden="true">
                                     <div class="blog-card" aria-hidden="true">
                                         <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6013.jpg" loading="lazy" alt="" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_0890.JPG" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_0890.jpg 800w, assets/images/gallery/IMG_0890.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6564.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6564.jpg 800w, assets/images/gallery/IMG_6564.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/Aviva_online lesson.JPG" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/Aviva_online lesso.jpg 800w, assets/images/gallery/Aviva_online lesso.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6562.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6562.jpg 800w, assets/images/gallery/IMG_6562.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6561.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6561.jpg 800w, assets/images/gallery/IMG_6561.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6560.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6560.jpg 800w, assets/images/gallery/IMG_6560.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6565.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6565.jpg 800w, assets/images/gallery/IMG_6565.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6569.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6569.jpg 800w, assets/images/gallery/IMG_6569.jpg 1053w" class="image-cover" aria-hidden="true"></div>
                                     </div>
                                 </div>
                             </div>
@@ -492,6 +633,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="blog-slide w-slide" aria-label="4 of 5" role="group" aria-hidden="true" style="transform: translateX(0px); opacity: 1;">
+                        <div class="collection-list-wrapper w-dyn-list" aria-hidden="true">
+                            <div role="list" class="regular-collection-list w-dyn-items" aria-hidden="true">
+                                <div role="listitem" class="w-dyn-item" aria-hidden="true">
+                                    <div class="blog-card" aria-hidden="true">
+                                        <div class="blog-card-thumbnail" aria-hidden="true"><img src="assets/images/gallery/IMG_6589.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, 372px" srcset="assets/images/gallery/IMG_6589.jpg 800w, assets/images/gallery/IMG_6589.jpg 1053w" class="image-cover" aria-hidden="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div>
                 <div class="blog-slider-left-button w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-1" aria-label="previous slide">
                     <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -524,6 +676,9 @@
     <div class="footer-section" id="contact">
         <div data-w-id="27694c21-cbfc-58f0-1e5c-e47458f6d8b6" class="container-regular">
             <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <div class="footer-link">© Made by the<span> String Lab</span> Team</div>
+                </div>
                 <div class="footer-social-links"><a href="https://www.google.com/" target="_blank"
                         class="footer-social-link w-inline-block">
                         <div class="footer-social w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="32"
@@ -547,14 +702,23 @@
                                     fill="currentColor" />
                             </svg></div>
                     </a>
-                    </a><a href="mailto:vmio@uwindsor.ca" target="_blank" class="footer-social-link w-inline-block">
-                        <div class="footer-social w-embed" style="padding-top:4px;padding-left: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="32" 
-                            height="32" viewBox="0 0 32 32" fill="none" stroke="#84889a" stroke-width="2" >
+                    </a><a href="mailto:vmio@uwindsor.ca" target="_blank" class="footer-social-link w-inline-block" >
+                        <div class="footer-social w-embed" style="padding-top:4px;padding-left: 4px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" 
+                            height="30" viewBox="0 0 30 30" fill="none" stroke="#84889a" stroke-width="2" >
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
 
-                            </path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </path><polyline points="22,6 12,13 2,6"></polyline></svg><p style="margin-bottom: 10px;">vmio@uwindsor.ca</p>
                         </div>
                     </a>
+                </a><a href="tel:+15195883476" target="_blank" class="footer-social-link w-inline-block">
+                    <div class="footer-social w-embed" style="padding-top:4px;padding-left: 4px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" 
+                        viewBox="0 0 30 30" fill="none" stroke="#84889a" stroke-width="2" >
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <p style="margin-bottom: 10px;">+1(519)588-3476</p>
+                    </div>
+                </a>
                 </div>
             </div>
         </div>

@@ -21,6 +21,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
     </style>
+    <link rel="icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -151,7 +152,7 @@
                             class="job-border w-inline-block" style="text-decoration: none;">
                             <div class="job-company-wrap">
                                 <div class="icon-wrap-regular"><img
-                                        src="assets/images/small-logo.png"
+                                        src="assets/images/logo.png"
                                         loading="lazy" alt="" class="icon-large" /></div>
                                 <div>
                                     <div class="subheading-regular">University of Windsor </div>
@@ -177,7 +178,7 @@
                             class="job-border w-inline-block" style="text-decoration: none;">
                             <div class="job-company-wrap">
                                 <div class="icon-wrap-regular"><img
-                                        src="assets/images/small-logo.png"
+                                        src="assets/images/logo.png"
                                         loading="lazy" alt="" class="icon-large" /></div>
                                 <div>
                                     <div class="subheading-regular">University of Windsor</div>
@@ -270,7 +271,8 @@
                     <div class="w-slide">
                         <div class="w-layout-grid testimonial-grid">
                             <div class="testimonial-content-wrap">
-                                <p class="testimonial-quote" >Stefanie Adams is completing her Bachelor of Arts degree at University of Windsor's School of Creative Arts, where she studies violin performance. She has taught violin and piano throughout Windsor and Essex County for five years, and is passionate about making music education available for people of all ages and backgrounds. As well as teaching, Stefanie enjoys performing violin for weddings and local music events, and is Principal Second violinist for the Windsor Symphony Community Orchestra.</p>
+                                <p class="paragraph-regular" >Stefanie Adams is completing her Bachelor of Arts degree at University of Windsor's School of Creative Arts, where she studies violin performance. She has taught violin and piano throughout Windsor and Essex County for five years, and is passionate about making music education available for people of all ages and backgrounds. As well as teaching, Stefanie enjoys performing violin for weddings and local music events, and is Principal Second violinist for the Windsor Symphony Community Orchestra.</p>
+                                <br>
                                 <div class="paragraph-regular text-color-gray-600"><span
                                         class="text-color-primary">Stefanie Adams</span> - Teacher
                                 </div>
@@ -288,10 +290,19 @@
                     <div class="w-slide">
                         <div class="w-layout-grid testimonial-grid">
                             <div class="testimonial-content-wrap">
-                                <p class="testimonial-quote">Originally from Windsor, Ontario, Dr. Adam Iannetta successfully completed his Doctorate of Musical Arts from Western University in 2019 and is quickly gaining notoriety as a versatile, up-and-coming performer</p>
+                                <p class="paragraph-regular"> &emsp;&emsp; Originally from Windsor, Ontario, Dr. Adam Iannetta successfully completed his Doctorate of Musical Arts from Western University in 2019 and is quickly gaining notoriety as a versatile, up-and-coming performer
+                                    <br><br>
+                                    &emsp;&emsp; Growing up in an Italian family, Adam has learned two very important things: you have to speak up if you ever want to be heard, and there is no such thing as a moment’s peace. You might say that his extroverted career is the result of his upbringing. Furthermore, Adam subscribes to these values as part of his way of living and always finds a way to keep himself busy. If he is not on stage, you will probably find him in his office. 
+                                </p>
+                                <br>
                                 <div class="paragraph-regular text-color-gray-600"><span
                                         class="text-color-primary">Adam Iannetta</span> - Tutor</div>
+                                        <br>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#adamModal">
+                                            View More
+                                          </button>
                             </div>
+                            
                             <div class="testimonial-image-wrap"><img
                                     src="assets/images/Adam.png"
                                     loading="lazy" alt="" class="image-cover" /></div>
@@ -330,6 +341,36 @@
                 </div>
                 <div class="slide-nav-hidden w-slider-nav w-round"></div>
             </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="adamModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" > 
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="h3-heading">Adam <span class="text-color-primary">Iannetta</span> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </h3>
+            
+            </div>
+            <div class="modal-body">
+                <p class="paragraph-regular" style="text-align: justify;">
+                    &emsp;&emsp; Originally from Windsor, Ontario, Dr. Adam Iannetta successfully completed his Doctorate of Musical Arts from Western University in 2019 and is quickly gaining notoriety as a versatile, up-and-coming performer. 
+                    <br><br>
+                    Growing up in an Italian family, Adam has learned two very important things: you have to speak up if you ever want to be heard, and there is no such thing as a moment’s peace. You might say that his extroverted career is the result of his upbringing. Furthermore, Adam subscribes to these values as part of his way of living and always finds a way to keep himself busy. If he is not on stage, you will probably find him in his office. 
+                    <br><br>
+                    Having started his musical career at the University of Windsor, Adam continues to be a featured soloist with the Windsor Symphony Orchestra, and is now working as General Manager for the Windsor Classic Chorale, Windsor’s premier chamber choir. In addition, Adam was a recurring member of Western University’s Opera Workshop, performing works including L’heure espagnole, Ravel; La bohème, Puccini; Hansel and Gretel, Humperdinck; The Pirates of Penzance, Gilbert & Sullivan. 
+                    <br><br>
+                    Although classically trained, Adam is no stranger to contemporary and popular music. From opera and oratorio to musical theatre and jazz, Adam has never been one to turn down an opportunity to learn new music. Just as well, his versatility and charming sense of humour are made easily apparent both on and off the stage. During his time at Western, Adam worked alongside directors including Tom Diamond, Michael Cavanagh, and Allison Grant as head of administration and stage management for the school’s Opera Workshop.   
+                    <br><br>
+                    From his doctoral studies, Adam hopes to cultivate his performance practice and musicianship to advocate all genres of music (classical and contemporary) as being more accessible to all groups and communities. 
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
         </div>
     </div>
     <div class="section-regular  neutral-100" id="research">
@@ -711,7 +752,8 @@
                             <!-- <p style="margin-bottom: 10px;">vmio@uwindsor.ca</p> -->
                         </div>
                     </a>
-                </a><a href="tel:+15195883476" target="_blank" class="footer-social-link w-inline-block">
+                </a><a href="tel:+15195883476" target="_blank" class="footer-social-link w-inline-block" 
+                 style="text-decoration: none;">
                     <div class="footer-social w-embed" style="padding-top:4px;padding-left: 4px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" 
                         viewBox="0 0 30 30" fill="none" stroke="#84889a" stroke-width="2" >

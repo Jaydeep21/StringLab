@@ -3856,7 +3856,17 @@ blockquote {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
-
+.feature-grid-large-sample {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 42px;
+  grid-row-gap: 42px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
 .feature-list-grid {
   margin-top: 44px;
   grid-column-gap: 24px;
@@ -7414,6 +7424,12 @@ blockquote {
   }
 
   .feature-grid-large {
+    grid-row-gap: 32px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-grid-large-sample {
     grid-row-gap: 32px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;

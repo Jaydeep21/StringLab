@@ -3123,8 +3123,14 @@ blockquote {
 .testimonial-slider-right-button:hover {
   background-color: #ebebef;
 }
+.testimonial-slider-left-button:hover {
+  background-color: #ebebef;
+}
 
 .testimonial-slider-right-button:active {
+  background-color: #d6d7e0;
+}
+.testimonial-slider-left-button:active {
   background-color: #d6d7e0;
 }
 
@@ -7360,14 +7366,14 @@ blockquote {
 
   .testimonial-slider-right-button {
     left: auto;
-    top: 0%;
+    top: -5%;
     right: 0%;
     bottom: auto;
   }
 
   .testimonial-slider-left-button {
     left: auto;
-    top: 0%;
+    top: -5%;
     right: 60px;
     bottom: auto;
   }

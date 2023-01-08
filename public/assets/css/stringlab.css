@@ -2818,6 +2818,23 @@ blockquote {
   grid-template-rows: auto;
 }
 
+.logo-grid-research {
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 14px;
+  padding-left: 14px;
+  justify-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
 .logo-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7724,6 +7741,12 @@ blockquote {
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
+  .logo-grid-research {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
 
   .navigation-button-wrap {
     display: none;
@@ -8007,7 +8030,10 @@ blockquote {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
+  .logo-grid-research {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
   .company-card {
     padding: 32px;
   }
